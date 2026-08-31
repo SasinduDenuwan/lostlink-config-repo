@@ -1,17 +1,3 @@
-#server:
-#  port: 8083
-#
-#spring:
-#  servlet:
-#    multipart:
-#      max-file-size: 20MB
-#      max-request-size: 25MB
-#
-## findora:
-##   storage:
-##     project-id: your-gcp-project-id
-##     bucket-name: findora-media-bucket
-
 server:
   port: 8083
 
@@ -21,17 +7,17 @@ spring:
       max-file-size: 20MB
       max-request-size: 25MB
 
-findora:
+lostlink:
   storage:
-    type: local # Options: 'local' or 'gcs'
-    local-dir: ./uploads # Directory where files will be saved locally
-    local-url-prefix: http://localhost:8083/uploads/ # Base URL to access local files
-    bucket-name: findora-media-bucket # For GCP GCS deployment
+    type: gcs
+    local-dir: ./uploads
+    local-url-prefix: http://10.160.0.4:8083/uploads/
+    bucket-name: lostlink-media-bucket-974ch
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://10.160.0.4:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -39,4 +25,33 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,gateway
+        include: health,info
+
+# server:
+#   port: 8083
+
+# spring:
+#   servlet:
+#     multipart:
+#       max-file-size: 20MB
+#       max-request-size: 25MB
+
+# findora:
+#   storage:
+#     type: local # Options: 'local' or 'gcs'
+#     local-dir: ./uploads # Directory where files will be saved locally
+#     local-url-prefix: http://localhost:8083/uploads/ # Base URL to access local files
+#     bucket-name: findora-media-bucket # For GCP GCS deployment
+
+# eureka:
+#   client:
+#     service-url:
+#       defaultZone: http://localhost:8761/eureka/
+#   instance:
+#     prefer-ip-address: true
+
+# management:
+#   endpoints:
+#     web:
+#       exposure:
+#         include: health,info
