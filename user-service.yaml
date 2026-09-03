@@ -27,3 +27,9 @@ management:
     web:
       exposure:
         include: health,info
+# Explicit dialect to prevent metadata probing failures on startup
+spring:
+jpa:
+properties:
+  hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
