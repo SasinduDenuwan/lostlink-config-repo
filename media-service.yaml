@@ -12,12 +12,12 @@ lostlink:
     type: gcs
     local-dir: ./uploads
     local-url-prefix: http://10.160.0.4:8083/uploads/
-    bucket-name: lostlink-media-bucket-974ch
+    bucket-name: lostlink-cloud-platform-2020
 
 eureka:
   client:
     service-url:
-      defaultZone: http://10.160.0.4:8761/eureka/
+      defaultZone: http://10.160.0.3:8761/eureka/
   instance:
     prefer-ip-address: true
 

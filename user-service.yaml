@@ -3,9 +3,9 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://34.21.191.131:5432/findora_users?sslmode=require
-    username: postgres
-    password: Charuka@974
+    url: jdbc:postgresql://34.21.191.131:5432/lostlink_users?sslmode=require
+    username: root
+    password: Lostlink@2020
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://10.160.0.4:8761/eureka/
+      defaultZone: http://10.160.0.3:8761/eureka/
   instance:
     prefer-ip-address: true
 

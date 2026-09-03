@@ -34,13 +34,13 @@ spring:
   #      uri: mongodb://localhost:27017/item-service
   data:
     mongodb:
-      uri: mongodb://root:9tp1wAMGaokrxUgQAhwtKkP2-0AlhJvHpycy1R3BW6qt0F7z@f0bb6700-5301-4128-bf4b-c17cd5586caa.asia-southeast1.firestore.goog:443/findora-item-db-974ch?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
+      uri: mongodb://root:OM3rrB2dW7mXD_Pp50q1FI9xxV5ON067Cr917qDv2_Zs8hI1@13c1a917-b57b-4f21-a5fa-1081fa78225c.asia-southeast1.firestore.goog:443/lostlink-nrd?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
   mongodb:
-    uri: mongodb://root:9tp1wAMGaokrxUgQAhwtKkP2-0AlhJvHpycy1R3BW6qt0F7z@f0bb6700-5301-4128-bf4b-c17cd5586caa.asia-southeast1.firestore.goog:443/findora-item-db-974ch?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
+    uri: mongodb://root:OM3rrB2dW7mXD_Pp50q1FI9xxV5ON067Cr917qDv2_Zs8hI1@13c1a917-b57b-4f21-a5fa-1081fa78225c.asia-southeast1.firestore.goog:443/lostlink-nrd?loadBalanced=true&tls=true&authMechanism=SCRAM-SHA-256&retryWrites=false
 eureka:
   client:
     service-url:
-      defaultZone: http://10.160.0.4:8761/eureka/
+      defaultZone: http://10.160.0.3:8761/eureka/
   instance:
     prefer-ip-address: true
 
