@@ -11,7 +11,7 @@ lostlink:
   storage:
     type: gcs
     local-dir: ./uploads
-    local-url-prefix: http://10.160.0.4:8083/uploads/
+    local-url-prefix: http://10.160.0.3:8083/uploads/
     bucket-name: lostlink-cloud-platform-2020
 
 eureka:

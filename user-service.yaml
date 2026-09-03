@@ -3,7 +3,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://34.21.191.131:5432/lostlink_users?sslmode=require
+    url: jdbc:postgresql://136.85.68.131:5432/lostlink_users?sslmode=require
     username: root
     password: Lostlink@2020
     driver-class-name: org.postgresql.Driver
