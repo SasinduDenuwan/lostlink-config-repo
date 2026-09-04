@@ -18,7 +18,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://10.160.0.3:8761/eureka/
+      defaultZone: http://10.160.0.2:8761/eureka/
   instance:
     prefer-ip-address: true
 
@@ -27,3 +27,9 @@ management:
     web:
       exposure:
         include: health,info
+# Explicit dialect to prevent metadata probing failures on startup
+spring:
+jpa:
+properties:
+  hibernate:
+    dialect: org.hibernate.dialect.PostgreSQLDialect
